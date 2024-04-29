@@ -109,24 +109,88 @@
 }
 
 
+/* DROPDOWN */
+
+.navbar .settings-dropdown a{
+    background-color: white;
+    display: block;
+}
+
+.settings-dropdown .arrow i{
+    left: 195px;
+    margin: 14px;
+    position: absolute;
+    font-size: 20px;
+    cursor:default;
+}
+.settings-dropdown a:hover .arrow i{
+    transform:rotateY(180deg);
+}
+
+ul.settings-dropdown a:hover{
+   display: block;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+   border-radius: 10px 10px 10px 10px;
+}
+.settings-dropdown:hover .Logout{
+    position: absolute;
+    display: block;
+}
+
+.settings-dropdown:hover .product-management{
+    position: relative;
+    display: block;
+    border-radius: 0;
+}
+
+.product-management {
+    margin: 0;
+    padding: 1px;
+    display: none;
+    z-index: 999;
+    border-radius: 20px;
+}
+
+.product-management a{
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 0;
+}
+.product-management i {
+    transform: translateY(-50px);
+    margin-left: 37px;
+    font-size: 35px;
+}
+    
 .Logout{
-    margin-top: 173px;
+    z-index: 999;
+    display: none;
+}
+.settings-dropdown .Logout i {
+    color: gray;
+    position: absolute;
+    margin-top: 63px;
 }
 
 .Logout button{
-    position: relative;
+    position: absolute;
     color: gray;
     background-color: white;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
-    padding: 20px;
+    padding: 15px;
     padding-left: 85px;
     padding-right: 85px;
     margin-right: 10px;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;  
+}
+.Logout i{
+    margin-left: 37px;
+    font-size: 35px;
 }
 
  button:hover{
@@ -135,8 +199,7 @@
     box-shadow: 10px 10px 20px;
 }
 
-
-
+/* DROPDOWN */
 
 /*Pop out window*/
 .Form{
