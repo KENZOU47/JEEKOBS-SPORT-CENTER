@@ -132,37 +132,14 @@ ul.settings-dropdown a:hover{
     background-color: white;
    border-radius: 10px 10px 10px 10px;
 }
+
 .settings-dropdown:hover .Logout{
     position: absolute;
     display: block;
 }
 
-.settings-dropdown:hover .product-management{
-    position: relative;
-    display: block;
-    border-radius: 0;
-}
-
-.product-management {
-    margin: 0;
-    padding: 1px;
-    display: none;
-    z-index: 999;
-    border-radius: 20px;
-}
-
-.product-management a{
-    font-weight: bold;
-    font-size: 13px;
-    margin-top: 0;
-}
-.product-management i {
-    transform: translateY(-50px);
-    margin-left: 37px;
-    font-size: 35px;
-}
-    
 .Logout{
+    margin: 1px;
     z-index: 999;
     display: none;
 }
