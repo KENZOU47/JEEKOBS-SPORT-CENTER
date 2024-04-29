@@ -1,0 +1,399 @@
+@import url( 'https://fonts.goolgleapis.com/css?family=Poppins:400,500,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 100;
+       color:black;
+   }
+
+   body{
+    background: rgb(223, 222, 222);
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 250px;
+    background: white;
+    padding: 10px;
+}
+
+.box{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 85px;
+}
+
+
+.profile p {
+   margin-left: 100px;
+   transform: translateY(37px);
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.box .profile i{
+    font-size: 60px;
+    transform: translateY(-40px);
+    margin-left: 10px;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 100%;
+    color: black;
+}
+
+
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar a {
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin-top: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar i{
+    color: gray;
+    font-size: 45px;
+    position: absolute;
+    transform: translateY(-57px);
+    margin-left: 19px;
+}
+
+.navbar a:hover{
+    transition: 0.4s ease-in-out;
+    background-color: white;
+    box-shadow: 10px 10px 20px;
+    border-radius: 20px;
+}
+
+
+.Products a{
+    background-color: white;
+    box-shadow: 10px 10px 20px aqua;
+}
+
+.navbar .Products a{
+    border-radius: 20px;
+    color: aqua;
+}
+.navbar .Products i{
+    color: aqua;
+}
+
+.tag{
+    padding-top: 15px;
+    position: absolute;
+    margin-left: 275px;
+    font-size: 32px;
+}
+.tag p{
+    font-weight: bold;
+}
+
+
+.Logout{
+    margin-top: 173px;
+}
+
+.Logout button{
+    position: relative;
+    color: gray;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+ button:hover{
+    background-color: white;
+    transition: 0.4s ease-in-out;
+    box-shadow: 10px 10px 20px;
+}
+
+
+
+
+/*Pop out window*/
+.Form{
+    width: 425px;
+    height: 277px;
+    box-shadow:  10px 10px 20px;
+    border-radius: 30px;
+    background-color:white;
+    position: absolute;
+    left: 55%;
+    top: -150%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);  
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+                z-index: 1000;
+}
+.Form.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);  
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+.Form p{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.Form button{
+    background-color: white;
+    color: black;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 50px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.Form .close-btn{
+    color: black;
+    font-size:50px;
+    position: absolute;
+    left: 270px;
+    top: 160px;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.Form .close-btn:hover{
+    transition: 0.4s ease-in-out;
+    box-shadow: 10px 10px 20px;
+    color: red;
+}
+.Form a{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    margin-left: 80px;
+}
+.Form button:hover{
+    transition: 0.4s ease-in-out;
+    color: lime;
+}
+
+/*Pop out window*/
+ 
+
+::-webkit-scrollbar{
+    width: .7vw;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color:aqua;
+    border-radius: 100vw;
+    width: .9vw;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 100vw;
+    margin-block: 2em;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    width: 1655px;
+    height: 940px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 870px;
+    display: flex;
+    gap: 70px;
+    border-radius: 20px;
+    margin-top: 33px;
+    overflow-y: scroll;
+    box-shadow: 10px 10px 20px;
+}
+
+.label p{
+    position: absolute;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 50px;
+    margin-left: 34%;
+    font-weight: bold;
+}
+
+.Vcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+.Vcontainer img:hover{
+    transition: 0.2s ease;
+    padding: 10px;
+}
+
+.Vcontainer img{
+    display: flex;
+    width: 240px;
+    height: 200px;
+    margin-left: 18px;
+    margin-top: 30px;
+    transition: 0.2s ease;
+}
+
+.Volleyball{
+    position: relative;
+    width: 300px;
+    height: 360px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.Volleyball p{
+    color: black;
+    margin-left: 70px;
+    margin-top: 20px;
+   font-size: 18px;
+}
+
+
+.Volleyball .Config{
+    display: flex;
+    margin-top: 25px;
+    height: 40px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.add {
+    position: relative;
+    font-size: 25px;
+    margin-left: 13px;
+}
+.Config .add a{ 
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 47px;
+    padding-right: 16px;
+    border-radius: 10px;
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.add a:hover{
+    box-shadow: 5px 5px 5px;
+    transition: 0.2s ease;
+}
+
+.Config .add i{
+    cursor: pointer;
+    color: gray;
+    position: absolute;
+    margin-top: 2px;
+    transform: translateX(-95px);
+}
+
+.delete{
+    position: relative;
+    font-size: 25px;
+    margin-left: 15px;
+}
+.Config .delete a{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 16px;
+    border-radius: 10px;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.delete a:hover{
+    box-shadow: 5px 5px 5px gray;
+    transition: 0.2s ease;
+}
+
+.Config .delete i{
+    cursor: pointer;
+    color: red;
+    position: absolute;
+    margin-top: 2px;
+    transform: translateX(-120px);
+}
+
+
+
+
+.next{
+    position: absolute;
+    font-size: 69px;
+    top: 440px;
+    right: 34px;
+    color: black;
+}
+.next i{
+    color: black;
+    transition: 0.3s ease;
+}
+.next i:hover{
+    transition: 0.3s ease;
+    color: aqua;
+}
+
+.back{
+    position: absolute;
+    font-size: 69px;
+    top: 440px;
+    left: 280px;
+    color: black;
+}
+.back i{
+    color: black;
+    transition: 0.3s ease;
+}
+.back i:hover{
+    color: aqua;
+    transition: 0.3s ease;
+}

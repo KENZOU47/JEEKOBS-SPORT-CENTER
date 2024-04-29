@@ -1,0 +1,307 @@
+@import url( 'https://fonts.goolgleapis.com/css?family=Poppins:400,500,700');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 100;
+       color:black;
+   }
+
+   body{
+    background: rgb(223, 222, 222);
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 250px;
+    background: white;
+    padding: 10px;
+}
+
+.box{
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 85px;
+}
+
+
+.profile p {
+   margin-left: 100px;
+   transform: translateY(37px);
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.box .profile i{
+    font-size: 60px;
+    transform: translateY(-40px);
+    margin-left: 10px;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 100%;
+    color: black;
+}
+
+
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar a {
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin-top: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    position: relative;
+}
+
+.navbar i{
+    color: gray;
+    font-size: 45px;
+    position: absolute;
+    transform: translateY(-57px);
+    margin-left: 19px;
+}
+
+.navbar a:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    box-shadow: 10px 10px 20px;
+    border-radius: 20px;
+}
+
+
+.Orders a{
+    background-color: white;
+    box-shadow: 10px 10px 20px aqua;
+}
+
+.navbar .Orders a{
+    border-radius: 20px;
+    color: aqua;
+}
+.navbar .Orders i{
+    color: aqua;
+}
+
+.tag{
+    padding-top: 15px;
+    position: absolute;
+    margin-left: 275px;
+    font-size: 32px;
+}
+.tag p{
+    font-weight: bold;
+}
+
+
+.Logout{
+    margin-top: 173px;
+}
+
+.Logout button{
+    position: relative;
+    color: gray;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-right: 10px;
+    cursor: pointer;
+   
+}
+
+ button:hover{
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px 20px;
+}
+
+
+
+
+/*Pop out window*/
+.Form{
+    width: 425px;
+    height: 277px;
+    box-shadow:  10px 10px 20px;
+    border-radius: 30px;
+    background-color:white;
+    position: absolute;
+    left: 55%;
+    top: -150%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);  
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+                z-index: 1000;
+}
+.Form.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);  
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+.Form p{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.Form button{
+    background-color: white;
+    color: black;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 50px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.Form .close-btn{
+    color: black;
+    font-size:50px;
+    position: absolute;
+    left: 270px;
+    top: 160px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Form .close-btn:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px 20px;
+    color: red;
+}
+.Form a{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    margin-left: 80px;
+}
+.Form button:hover{
+    transition: all 0.3s ease-in-out;
+    color: lime;
+}
+
+
+.container{
+    display: grid;
+    background-color: white;
+    width: 1650px;
+    height: 937px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.table-scroll{
+    width: 1550px;
+    height: 730px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px;
+}
+
+.table-scroll > .table{
+    width: 100%;
+}
+
+.table {
+    font-size: 25px;
+    border-collapse: collapse;
+}
+
+.table tr{
+    scroll-snap-align: start;
+    border-bottom: 1px solid gray;
+    transition: 0.2s ease;
+}
+.table tr:hover{
+    background-color: rgba(255, 228, 196, 0.329);
+    transition: 0.3s ease;
+}
+.table th{   
+    overflow-y: scroll;
+    background-color: aqua;
+    height: 80px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+.table td{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.nav_bar{
+    display: inline-flex;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.nav_bar a{
+    color: gray;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.nav_bar a:hover{
+    color: aqua;
+    transition: 0.3s ease;
+}
+
+.selected a{
+    color:aqua;
+    box-shadow: 5px 5px 20px gray;
+}
+
+::-webkit-scrollbar{
+    width: .7vw;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color:aqua;
+    border-radius: 100vw;
+    width: .9vw;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 100vw;
+    margin-block: 2em;
+}
