@@ -32,23 +32,21 @@
 
 
 .profile p {
-   margin-left: 100px;
-   transform: translateY(37px);
-    font-size: 32px;
-    color: black;
-    font-weight: bold;
-    
-}
-
-.box .profile i{
-    font-size: 60px;
-    transform: translateY(-40px);
-    margin-left: 10px;
-    padding: 10px;
-    background-color: aqua;
-    border-radius: 100%;
-    color: black;
-}
+    margin-left: 100px;
+    transform: translateY(37px);
+     font-size: 32px;
+     color: black;
+     font-weight: bold;
+     
+ }
+ 
+ .box .profile img{
+     height: 100px;
+     width: 100px;
+     transform: translateY(-40px);
+     padding: 15px;
+     border-radius: 100%;
+ }
 
 
 
