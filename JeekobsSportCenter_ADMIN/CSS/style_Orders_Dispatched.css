@@ -297,10 +297,36 @@ ul.settings-dropdown a:hover{
 
 .table td{
     padding: 10px;
+    padding-left: 65px;
     align-items: center;
     justify-content: center;
     height: 80px;
 }
+
+.table tr .actions i{
+    color: gray;
+    margin-left: 50px; 
+    padding: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+.table tr .actions i:hover {
+    color: black;
+    font-size: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.table tr i#trash{
+    color: gray;
+    transition: 0.1s ease-in-out;
+}
+
+.table tr i#trash:hover{
+    font-size: 30px;
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
 
 .nav_bar{
     display: inline-flex;
