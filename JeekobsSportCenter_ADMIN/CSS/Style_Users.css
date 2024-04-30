@@ -85,16 +85,16 @@
 }
 
 
-.Applicants a{
+.Users a{
     background-color: white;
     box-shadow: 10px 10px 20px aqua;
 }
 
-.navbar .Applicants a{
+.navbar .Users a{
     border-radius: 20px;
     color: aqua;
 }
-.navbar .Applicants i{
+.navbar .Users i{
     color: aqua;
 }
 
