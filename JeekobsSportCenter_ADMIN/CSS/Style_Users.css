@@ -291,6 +291,7 @@ ul.settings-dropdown a:hover{
     transition: 0.3s ease;
 }
 .table th{   
+    padding-right: 45px;
     overflow-y: scroll;
     background-color: aqua;
     height: 80px;
