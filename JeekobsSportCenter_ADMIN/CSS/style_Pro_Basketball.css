@@ -94,17 +94,6 @@
     color: aqua;
 }
 
-.tag{
-    padding-top: 15px;
-    position: absolute;
-    margin-left: 275px;
-    font-size: 32px;
-}
-.tag p{
-    font-weight: bold;
-}
-
-
 /* DROPDOWN */
 
 .navbar .settings-dropdown a{
@@ -245,30 +234,26 @@ ul.settings-dropdown a:hover{
 
 /*Pop out window*/
 
-::-webkit-scrollbar{
-    width: .7vw;
-    
-}
-::-webkit-scrollbar-thumb{
-    background-color:aqua;
-    border-radius: 100vw;
-    width: .9vw;
-}
-::-webkit-scrollbar-track{
-    background-color: white;
-    border-radius: 100vw;
-    margin-block: 2em;
-}
 
 .container{
     display: flex;
     background-color: white;
-    justify-content: center;
     width: 1655px;
     height: 940px;
     margin: auto;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
+}
+
+.container .tag{
+    margin-top: -10px;
+    position: absolute;
+     margin-left: 1px;
+     font-size: 32px;    
+}
+
+.tag p{
+   font-weight: bold;
 }
 
 .wrapper{
@@ -427,4 +412,19 @@ ul.settings-dropdown a:hover{
 .back i:hover{
     color: aqua;
     transition: 0.3s ease;
+}
+
+::-webkit-scrollbar{
+    width: .7vw;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color:aqua;
+    border-radius: 100vw;
+    width: .9vw;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 100vw;
+    margin-block: 2em;
 }

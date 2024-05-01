@@ -95,16 +95,6 @@
     color: aqua;
 }
 
-.tag{
-    padding-top: 15px;
-    position: absolute;
-    margin-left: 275px;
-    font-size: 32px;
-}
-.tag p{
-    font-weight: bold;
-}
-
 
 /* DROPDOWN */
 
@@ -247,16 +237,25 @@ ul.settings-dropdown a:hover{
 /*Pop out window*/
 
 
-
-
 .container-bg{
     background-color: white;
     width: 1650px;
-    height: 950px;
+    height: 940px;
     margin: auto;
     display: flex;
     border-radius: 20px;
     padding: 10px;
+}
+
+.container-bg .tag{
+    margin-top: 1px;
+    position: absolute;
+     margin-left: 10px;
+     font-size: 32px;    
+}
+
+.tag p{
+   font-weight: bold;
 }
 
 .table-scroll{

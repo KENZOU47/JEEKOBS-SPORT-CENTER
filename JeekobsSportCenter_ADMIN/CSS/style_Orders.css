@@ -96,17 +96,6 @@
     color: aqua;
 }
 
-.tag{
-    padding-top: 15px;
-    position: absolute;
-    margin-left: 275px;
-    font-size: 32px;
-}
-.tag p{
-    font-weight: bold;
-}
-
-
 /* DROPDOWN */
 
 .navbar .settings-dropdown a{
@@ -251,9 +240,20 @@ ul.settings-dropdown a:hover{
     display: grid;
     background-color: white;
     width: 1650px;
-    height: 937px;
+    height: 940px;
     border-radius: 20px;
     margin: auto;
+}
+
+.container .tag{
+    margin-top: 10px;
+    position: relative;
+     margin-left: 25px;
+     font-size: 32px;    
+}
+
+.tag p{
+   font-weight: bold;
 }
 
 .table-scroll{
@@ -262,7 +262,7 @@ ul.settings-dropdown a:hover{
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 170px;
+    margin-top: 110px;
     overflow-y: auto;
     box-shadow: 5px 5px 15px;
 }

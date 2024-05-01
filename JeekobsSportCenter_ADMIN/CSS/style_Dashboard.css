@@ -96,18 +96,6 @@ body{
 }
 
 
-.tag{
-    padding-top: 15px;
-    position: absolute;
-    margin-left: 275px;
-    font-size: 32px;
-}
-.tag p{
-    font-weight: bold;
-}
-
-
-
 /* DROPDOWN */
 
 .navbar .settings-dropdown a{
@@ -175,8 +163,8 @@ ul.settings-dropdown a:hover{
 }
 
 
-
 /*Pop out window*/
+
 .Form{
     width: 425px;
     height: 277px;
@@ -249,14 +237,27 @@ ul.settings-dropdown a:hover{
 /*Pop out window*/
 
 
+
 .mainContainer{
     display: block;
     background-color: white;
     width: 1650px;
-    height: 937px;
+    height: 940px;
    margin: auto;
    border-radius: 20px;
    box-shadow: 10px 10px 20px;
+   overflow-y: auto;
+}
+
+.mainContainer .tag{
+     padding-top: 15px;
+     position: relative;
+      margin-left: 25px;
+      font-size: 32px;    
+}
+
+.tag p{
+    font-weight: bold;
 }
 
 .container1{
@@ -265,7 +266,7 @@ ul.settings-dropdown a:hover{
     gap: 30px;
     width: 1600px;
     height: 200px;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 33px;
 }
 
@@ -422,4 +423,11 @@ tr img{
     background-color: white;
     border-radius: 100vw;
     margin-block: 2em;
+}
+
+
+@media (max-width: 1880px){
+    .mainContainer{
+        width: 1500px;
+    }
 }

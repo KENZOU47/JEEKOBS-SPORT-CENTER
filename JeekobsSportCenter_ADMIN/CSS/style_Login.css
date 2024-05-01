@@ -100,6 +100,56 @@ body{
     color: black;
 }
 
+@media (max-width: 424px){
+    .wrapper{
+        width: 300px;
+    }
+    .wrapper .input-box{
+        width: 230px;
+    }
+    .input-box input{
+        font-size: 20px;
+    }
+    .wrapper .input{
+        width: 100%;
+    }
+    .wrapper .btn{
+        width: 150px;
+    }
+    .wrapper i{
+        right: 10px;
+    }
+}
 
-
+@media  (max-height: 471px) {
+    .wrapper{
+        width: 280px;
+        height: 350px;
+    }
+    .wrapper p{
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    .wrapper .input-box{
+        width: 200px;
+        margin-top: 20px;
+    }
+    .input-box  input::placeholder{
+        font-size: 18px;
+    }
+    .input-box .input{
+        font-size: 10px;
+    }
+    .wrapper .btn{
+        width: 150px;
+        font-size: 18px;
+        height: 40px;
+        margin-left: 68px;
+        margin-top: 5px;
+    }
+    .wrapper i{
+        right: 8px;
+        font-size: 20px;
+    }
+}
  

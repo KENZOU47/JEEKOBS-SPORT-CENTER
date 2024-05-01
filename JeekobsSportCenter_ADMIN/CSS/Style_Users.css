@@ -95,16 +95,6 @@
     color: aqua;
 }
 
-.tag {
-    padding-top: 15px;
-    position: absolute;
-    margin-left: 275px;
-    font-size: 32px; 
-}
-.tag p{
-    font-weight: bold;
-}
-
 
 /* DROPDOWN */
 
@@ -248,36 +238,26 @@ ul.settings-dropdown a:hover{
 /*Pop out window*/
 
 
-
-
-::-webkit-scrollbar{
-    width: .7vw;
-    
-}
-::-webkit-scrollbar-thumb{
-    background-color:aqua;
-    border-radius: 100vw;
-    width: .9vw;
-}
-::-webkit-scrollbar-track{
-    background-color: white;
-    border-radius: 100vw;
-    margin-block: 2em;
-}
-
-
 .container{
     display: flex;
     flex-flow: column;
     background-color: white;
     width: 1650px;
-    height: 930px;
+    height: 940px;
     padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
     margin: auto;
-    border-radius: 30px;
-    align-items: center;
+    border-radius: 20px;
+}
+
+.container .tag{
+    margin-top: -9px;
+    position: relative;
+     margin-left: 6px;
+     font-size: 32px;    
+}
+
+.tag p{
+   font-weight: bold;
 }
 
 .table-scroll{
@@ -356,3 +336,19 @@ tr img{
     width: 60px;
     border-radius: 60px;
 }
+
+::-webkit-scrollbar{
+    width: .7vw;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color:aqua;
+    border-radius: 100vw;
+    width: .9vw;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 100vw;
+    margin-block: 2em;
+}
+
