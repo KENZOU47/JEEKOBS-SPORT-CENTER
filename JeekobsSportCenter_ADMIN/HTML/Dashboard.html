@@ -69,14 +69,13 @@
         <!--LOGOUT PAGE-->
 
 <!--Popout Logout-->
-<div class="overlay">
+
 <div class="Form">
   <div class="close-btn">No</div>
   <form action= "/JeekobsSportCenter_ADMIN/HTML/Admin-Login.html">
     <p>Log out?</p>
     <button type="submit">Yes</button>
   </form>  
-</div>
 </div>
 <!--Popout Logout-->
 
@@ -167,7 +166,16 @@
   </div>
 
    
-    
-    <script src="/JAVASCRIPT/Logout_Dashboard.js"></script>
+    <script>
+
+  document.querySelector("#show-logout").addEventListener("click",function(){
+    document.querySelector(".Form").classList.add("active");
+});
+document.querySelector(".Form .close-btn").addEventListener("click",function(){
+    document.querySelector(".Form").classList.remove("active");
+});
+
+</script>
+
 </body>
 </html>
