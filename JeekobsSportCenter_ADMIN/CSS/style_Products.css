@@ -283,7 +283,7 @@ ul.settings-dropdown a:hover{
     display: grid;
     grid-template-columns:  auto auto auto auto;
     width: 150%;
-    height: 800px;
+    height: 830px;
     gap: 40px;
     margin-right: auto;
     margin-left: auto;

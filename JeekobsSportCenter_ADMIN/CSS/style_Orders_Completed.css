@@ -293,7 +293,7 @@ ul.settings-dropdown a:hover{
 
 .table td{
     padding: 10px;
-    padding-left: 40px;
+    padding-left: 20px;
     align-items: center;
     justify-content: center;
     height: 80px;
@@ -301,7 +301,7 @@ ul.settings-dropdown a:hover{
 
 .table tr .actions i{
     color: gray;
-    margin-left: 50px; 
+    margin-left: 30px; 
     padding: 5px;
     transition: 0.1s ease-in-out;
 }
