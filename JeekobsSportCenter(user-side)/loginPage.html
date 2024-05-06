@@ -14,7 +14,7 @@
     <div class="container" id="signUp" style="display: none;">
         <h1 class="form-title" >Register</h1>
             
-            <form method="post" action="register.php">
+            <form  action="">
                 <div class="input-group">
                     <i class="fas fa-user"></i>
                     <input type="text" name="fname" id="fname" placeholder="Firstname">
@@ -36,7 +36,7 @@
                     <input type="password" name="password" id="password" placeholder="password">
                     <label for="password"> password</label>
                 </div>
-                <input type="submit" class="btn" value="Sign Up" name="signUp">
+                <input type="submit" class="btn"  name="signUp" onclick="signUp()">
             </form>
             <p class="or">----or-----</p>
             <div class="icons">
@@ -55,7 +55,7 @@
     <div class="container" id="signIn" >
         <h1 class="form-title" >Sign In</h1>
           
-            <form method="post" action="register.php">
+            <form  action="jeekobsportCenter.html">
                
                 <div class="input-group">
                     <i class="fas fa-envelope"></i>
@@ -70,7 +70,7 @@
                         <a href="#"> Recover password</a>
                     </p>
                 </div>
-                <input type="submit" class="btn" value="Sign In" name="signIn">
+                <input type="submit" class="btn"  name="signIn" onclick="signIn()">
                 
             </form>
             <p class="or">----or-----</p>

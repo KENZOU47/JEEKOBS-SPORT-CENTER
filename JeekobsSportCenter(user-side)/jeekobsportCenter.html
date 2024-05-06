@@ -1,9 +1,9 @@
 
-<?php
+<!---?php
 session_start();
 include("connect.php");
 ?>
-
+-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -460,15 +460,16 @@ include("connect.php");
 <script>   
 
 function shopNow (){
-  window.open("loginPage.php")
-  window.close("jeekobsportCenter.php") ;
+  window.close("jeekobsportCenter.html") ;
+  window.open("loginPage.html")
+  
  
   
 
 }
 function goToShop(){
   window.open("add_cart.html")
-  window.close("jeekobsportCenter.php");
+  window.close("jeekobsportCenter.html");
 }
 /*function toggle(){
   var blur = getElementById("blur");
@@ -497,7 +498,7 @@ window.addEventListener("scroll", function(){
  
 </script>
 
-<?php
+<!--<?php
 if(isset($_SESSION['mail'])){
   $email= $_SESSION['mail'];
   $query=mysqli_query($conn,"SELECT user.*FROM `users` WHERE users.email='$email'");
@@ -507,7 +508,7 @@ if(isset($_SESSION['mail'])){
   }
 }
 ?>
-
+-->
 
 
 

@@ -14,3 +14,14 @@ signInButton.addEventListener("click",function(){
     signUpForm.style.transform=" transition:0.4s"
     signInForm.style.transform=" transition:0.4s"
 })
+
+function signIn(){
+    window.close("loginPage.html");
+    window.open("jeekobsportCenter.html");
+
+}
+function signUp(){
+    window.open("loginPage.html");
+   
+
+}

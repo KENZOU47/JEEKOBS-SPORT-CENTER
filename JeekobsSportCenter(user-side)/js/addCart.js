@@ -38,6 +38,7 @@ function addDataToHTML (){
             listProductHTML.appendChild(newProduct)
         })
     }
+   
     }
     listProductHTML.addEventListener('click',(event)=>{
         let positionClick = event.target;
@@ -109,6 +110,7 @@ function addCarToHTML  () {
  iconCartSpan.innerText = totalQuantity;
  checkOutCart.innerText = `Checkout - Total: $${totalAmount.toFixed(2)}`;
  document.querySelector('.totalAmount').innerText = `Total: $${totalAmount.toFixed(2)}`;
+ 
  return totalAmount;
  
    }
@@ -145,8 +147,9 @@ function changeQuantity (product_id,type) {
                     }
                     break;
         }
-        addCartToStorage();
+       
         addCarToHTML();
+        addCartToStorage();
     }
 }
 function calculateTotalAmount() {
@@ -176,31 +179,12 @@ function checkout() {
 
     
     clearCart();
-    sendDataToPHP();
+  
+   
     
 }
-function sendDataToPHP() {
-  
-    const name = document.querySelector('.name').innerText.trim(); // Trim whitespace
-    const totalPrice = document.querySelector('.totalPrice').innerText.replace('$', '').trim(); // Trim whitespace
-    const totalAmount = calculateTotalAmount();
 
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'insert_data.php', true);
-    xhr.setRequestHeader('Content-Type', 't');
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            console.log(xhr.responseText); 
-           
-        } else {
-            console.error('Error:', xhr.statusText); // Log error message
-        }
-    };
-    xhr.onerror = function () {
-        console.error('Request failed'); // Log request failure
-    };
-    xhr.send(`name=${name}&totalPrice=${totalPrice}&totalAmount=${totalAmount}`);
-}
+
 document.querySelector('.close-popup').addEventListener('click', () => {
     const popup = document.querySelector('.popup');
     popup.style.display = 'none';
@@ -224,7 +208,7 @@ function clearCart() {
 
 function initApp  ()  {
  
-    fetch('products.json')
+    fetch('js/products.json')
     .then(response => response.json())
     .then(data => {
         listProducts = data;
