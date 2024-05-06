@@ -73,7 +73,7 @@ include("connect.php");
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact us</a>
                 </li>
-                <li "nav-item">
+                <li class="nav-item">
                  <button  class="material-symbols-outlined" onclick="shopNow()">logout</button> 
                 
                 </li>
