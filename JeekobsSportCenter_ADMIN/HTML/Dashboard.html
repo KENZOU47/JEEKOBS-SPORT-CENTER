@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="/JeekobsSportCenter_ADMIN/CSS/style_Dashboard.css">
-    <link rel="icon" type="image/jpg" href="/JeekobsSportCenter_ADMIN/Logo/LOGO.png">
+    <link rel="icon" type="image/jpg" href="/JeekobsSportCenter_ADMIN/Logo/Logo3.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -14,7 +14,7 @@
        <div class="box">
          <div class="profile">
             <p>Admin</p>
-            <img src="/JeekobsSportCenter_ADMIN/Users/Admin.jpg" alt="">
+            <img src="/JeekobsSportCenter_ADMIN/Logo/Logo3.png" alt="">
          </div>
        </div>
 
@@ -42,7 +42,8 @@
             <a href="/JeekobsSportCenter_ADMIN/HTML/Users.html">Users</a>
             <i class='bx bxs-user-badge'></i>
          </li>
-          <!--DORPDOWN-->
+
+          <!--DROPDOWN-->
          <ul class="settings-dropdown">
           <li>
             <a>Settings</a>
@@ -58,26 +59,7 @@
       </div>    
          </li>
         </ul>
-         <!--DORPDOWN-->
-        </ul>
-
-         <!--LOGOUT PAGE-->
-      <div class="Logout">
-        <button id="show-logout">Logout</button>
-         <i class='bx bxs-log-out' ></i>
-    </div>
-        <!--LOGOUT PAGE-->
-
-<!--Popout Logout-->
-
-<div class="Form">
-  <div class="close-btn">No</div>
-  <form action= "/JeekobsSportCenter_ADMIN/HTML/Admin-Login.html">
-    <p>Log out?</p>
-    <button type="submit">Yes</button>
-  </form>  
-</div>
-<!--Popout Logout-->
+         <!--DROPDOWN-->
 
        </div>   
      </div>
@@ -165,15 +147,31 @@
   
   </div>
 
-   
-    <script>
+<!--Popout Logout-->
 
-  document.querySelector("#show-logout").addEventListener("click",function(){
-    document.querySelector(".Form").classList.add("active");
-});
-document.querySelector(".Form .close-btn").addEventListener("click",function(){
-    document.querySelector(".Form").classList.remove("active");
-});
+<div id="modal-bg" class="modal">  
+<form action= "/JeekobsSportCenter_ADMIN/HTML/Admin-Login.html" class="modal-content">
+<p>Log out?</p>
+<button type="submit">Yes</button>
+<span class="close-btn">No</span>
+</form>  
+</div>
+<!--Popout Logout-->
+
+   
+  <script>
+
+ var modal = document.getElementById("modal-bg");
+  var btn = document.getElementById("show-logout");
+    var span = document.getElementsByClassName("close-btn")[0];
+
+  btn.onclick = function() {
+  modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+  modal.style.display = "none";
+  }
 
 </script>
 
