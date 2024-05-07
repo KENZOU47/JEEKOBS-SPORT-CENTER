@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders</title>
-    <link rel="stylesheet" href="../CSS/style_Orders_Dispatched.css">
+    <link rel="stylesheet" href="../CSS/style_Orders_Shipped.css">
     <link rel="icon" type="image/jpg" href="../Logo/Logo3.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -66,13 +66,13 @@
 
     <div class="container">
       
-    <div class="tag"><p>Orders > Dispatched</p></div>
+    <div class="tag"><p>Orders > Shipped</p></div>
 
       <div class="nav_bar">       
           <a href="../HTML/Orders.html">All orders</a>
 
           <div class="selected">
-               <a>Dispatched</a>
+               <a>Shipped</a>
             </div>
             <a href="../HTML/Orders_Pending.html">Pending</a>
         <a href="../HTML/Orders_Completed.html">Completed</a>
@@ -82,40 +82,48 @@
       <table id="T1" class="table">
       <tr>
         <thead>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Address</th>
-        <th>Date</th>
-        <th>Price</th>
-        <th>Status</th>
-        <th>Action</th>
+          <th>Id</th>
+          <th>Name</th>
+          <th>OrderName</th>
+          <th>Address</th>
+          <th>Date</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Status</th>
+          <th>Action</th>
       </thead>
       </tr>
       <tr>
         <td>2</td>
         <td><img src="../Users/Allen Tan.jpg" alt="">Allen Tan</td>
+        <td>SBall</td>
         <td>Zamboanga City</td>
         <td>11/02/2024</td>
+        <td>2</td>
         <td>60$</td>
-        <td>Dispatched</td>
+        <td>Shipped</td>
         <td class="actions"><a href=""><i class='bx bx-edit-alt'></i><i class='bx bx-trash-alt' id="trash"></i></a></td>
       </tr>
       <tr>
         <td>7</td>
         <td><img src="../Users/Caloocan Boy.jpg" alt="">Caloocan Boy</td>
+        <td>SBall</td>
         <td>Zamboanga City</td>
         <td>02/03/2024</td>
+        <td>1</td>
         <td>68$</td>
-        <td>Dispatched</td>
+        <td>Shipped</td>
         <td class="actions"><a href=""><i class='bx bx-edit-alt'><i class='bx bx-trash-alt' id="trash"></i></a></td>
       </tr>
       <tr>
         <td>10</td>
         <td><img src="../Users/Gio Guevarra.jpg" alt="">Gioiel Guevarra</td>
+        <td>SBall</td>
         <td>Zamboanga City</td>
         <td>05/01/2024</td>
+        <td>8</td>
         <td>25$</td>
-        <td>Dispatched</td>
+        <td>Shipped</td>
         <td class="actions"><a href=""><i class='bx bx-edit-alt'><i class='bx bx-trash-alt' id="trash"></i></a></td>
        </tr>
       </table>
