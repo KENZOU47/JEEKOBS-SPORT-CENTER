@@ -156,17 +156,15 @@ ul.settings-dropdown a:hover{
     font-size: 35px;
 }
 
- button:hover{
+ .Logout button:hover{
     background-color: white;
     transition: 0.4s ease-in-out;
     box-shadow: 10px 10px 20px;
 }
 
-/* DROPDOWN */
 
 
 /*Pop out window*/
-
 .modal {
     display: none; 
     position: fixed; 
@@ -239,8 +237,64 @@ ul.settings-dropdown a:hover{
     transition: 0.2s ease-in-out;
 }
   
+/* Remove User */
+.modaldel{
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+   background-color: rgba(0, 0, 0, 0.7);
+}
 
-/*Pop out window*/
+.modaldel-content{
+    position: relative;
+    background-color: white;
+    margin: 13% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 550px; 
+    height: 210px;
+    position: relative;
+    box-shadow: 0px 5px 15px black;
+}
+
+.modaldel-content h1{
+    margin-left: 25%;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.modaldel-content p{
+    margin-left: 22%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.modaldel-content button{
+    width: 40%;
+    margin-left: 33px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.modaldel-content #cancel:hover{
+    background-color: rgba(136, 136, 136, 0.568);
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 5px grey;
+}
+.modaldel-content #submit:hover{
+    background-color: rgba(255, 0, 0, 0.856);
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 5px grey;
+}
+
 
 .container{
     display: grid;
@@ -315,21 +369,25 @@ ul.settings-dropdown a:hover{
 }
 
 .table tr .actions i:hover {
-    color: black;
+    color: red;
     font-size: 30px;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.table tr i#trash{
-    color: gray;
+.table tr button{
+    border: none;
+    background-color: white;
     transition: 0.1s ease-in-out;
 }
 
-.table tr i#trash:hover{
-    font-size: 30px;
-    color: red;
-    transition: 0.2s ease-in-out;
+.table tr button i{
+    font-size: 25px;
 }
+
+
+
+
 
 tr img{
     display: inline-flex;

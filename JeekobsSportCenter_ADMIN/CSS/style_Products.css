@@ -239,8 +239,87 @@ ul.settings-dropdown a:hover{
 }
   
 
-/*Pop out window*/
+/* Popout Add Products */
 
+    .modal-products{
+        display: none; 
+        position: fixed; 
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+       background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .modalproducts-content{
+        position: relative;
+        background-color: white;
+        margin: 9% auto;
+        padding: 30px;
+        border-radius: 10px;
+        width: 550px; 
+        height: 500px;
+        position: relative;
+        box-shadow: 0px 5px 15px black;
+    }
+
+     .cancel{
+        position: absolute;
+        left: 510px;
+        margin-top: -20px;
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .modalproducts-content h1{
+        margin-left: 75px;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    
+    .modalproducts-content label{
+        font-size: 18px;
+    }
+
+    .modalproducts-content input{
+        display: block;
+        padding: 5px 10px;
+        width: 100%;
+        font-size: 25px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .modalproducts-content input::placeholder{
+        font-size: 20px;
+    }
+
+    .modalproducts-content #image{
+        margin-left: -9px;
+        cursor: pointer;
+    }
+
+    .modalproducts-content button{
+        width: 100%;
+        height: 12%;
+        border-radius: 10px;
+        font-size: 25px;
+        background-color: aqua;
+        border: none;
+        transition: 0.3s ease-out;
+    }
+    .modalproducts-content button:hover{
+        background-color: bisque;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0px 5px 5px gray;
+    }
+    
+
+
+    
 .container{
     display: flex;
     background-color: white;

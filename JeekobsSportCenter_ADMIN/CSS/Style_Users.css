@@ -239,9 +239,8 @@ ul.settings-dropdown a:hover{
     box-shadow: 5px 5px 5px grey;
     transition: 0.2s ease-in-out;
 }
-  
-
 /*Pop out window*/
+
 
 
 .container{
@@ -326,23 +325,14 @@ ul.settings-dropdown a:hover{
     transition: 0.2s ease-in-out;
 }
 
-.table tr i#trash{
-    color: gray;
-    transition: 0.1s ease-in-out;
-}
-
-.table tr i#trash:hover{
-    font-size: 30px;
-    color: red;
-    transition: 0.2s ease-in-out;
-}
-
 tr img{
     margin-right: 25px;
     height: 60px;
     width: 60px;
     border-radius: 60px;
 }
+
+
 
 ::-webkit-scrollbar{
     width: .7vw;
